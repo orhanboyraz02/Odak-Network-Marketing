@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>ODAK PREMIUM NETWORK| Network Marketing Ekosistemi</title>
+    <title>ODAK Power | Network Marketing Ekosistemi</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -16,19 +16,19 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: #0A0A0A;
+            background: #0A192F;
             color: #FFFFFF;
             overflow-x: hidden;
         }
 
         :root {
-            --bg-dark: #0A0A0A;
-            --bg-card: #111111;
-            --bg-elevated: #1A1A1A;
-            --border: #2A2A2A;
+            --bg-dark: #0A192F;
+            --bg-card: #0D2B4E;
+            --bg-elevated: #123456;
+            --border: #1E4A76;
             --text-primary: #FFFFFF;
-            --text-secondary: #A3A3A3;
-            --text-muted: #6B6B6B;
+            --text-secondary: #B8D4F0;
+            --text-muted: #7BA3C7;
             --gold: #D4AF7A;
             --gold-dark: #B8925A;
             --gold-light: #E2CAA0;
@@ -46,7 +46,7 @@
 
         .sidebar {
             width: 280px;
-            background: linear-gradient(180deg, #0A0A0A 0%, #050505 100%);
+            background: linear-gradient(180deg, #07162B 0%, #041020 100%);
             border-right: 1px solid var(--gold);
             position: fixed;
             height: 100vh;
@@ -193,7 +193,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(10, 10, 10, 0.98);
+            background: rgba(10, 25, 47, 0.98);
             z-index: 1000;
             display: flex;
             align-items: center;
@@ -471,7 +471,7 @@
         }
 
         .ai-coach-card {
-            background: linear-gradient(135deg, #111111, #0A0A0A);
+            background: linear-gradient(135deg, #0D2B4E, #0A192F);
             border: 1px solid var(--gold);
             border-radius: 24px;
             padding: 24px;
@@ -601,6 +601,19 @@
         .badge-gold { background: var(--gold); color: var(--bg-dark); }
         .badge-platinum { background: linear-gradient(135deg, #E5E4E2, #C0C0C0); color: #000; }
 
+        .commission-info {
+            background: rgba(212, 175, 122, 0.1);
+            border-radius: 12px;
+            padding: 12px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .commission-info span {
+            font-size: 14px;
+            color: var(--gold);
+            font-weight: bold;
+        }
+
         @media (max-width: 1024px) {
             .sidebar { transform: translateX(-100%); }
             .sidebar.mobile-open { transform: translateX(0); }
@@ -654,7 +667,7 @@
         <div class="login-card">
             <div class="login-logo"><i class="fas fa-bolt"></i></div>
             <h2>ODAK POWER</h2>
-            <p style="color: var(--gold); margin-bottom: 16px;">ODAK NETWORK MARKETİNG</p>
+            <p style="color: var(--gold); margin-bottom: 16px;">✦ ODAK NETWORK MARKETİNG ✦</p>
             <p style="margin-bottom: 24px;">Premium Wellness Ekosistemine Hoş Geldin</p>
             <div class="input-group"><label>E-posta</label><input type="email" id="loginEmail" value="demo@odak.com"></div>
             <div class="input-group"><label>Şifre</label><input type="password" id="loginPassword" value="123456"></div>
@@ -701,12 +714,12 @@
 
     <div class="footer" id="footer" style="display: none;">
         <div class="footer-info">
-            <span><i class="fas fa-user"></i> CFO.Müh.Orhan BOYRAZ</span>
+            <span><i class="fas fa-user"></i>CFO.Müh.Orhan BOYRAZ</span>
             <span><i class="fab fa-whatsapp"></i> 0540 966 66 02</span>
             <span><i class="fas fa-envelope"></i> orhanboyraz0216@gmail.com</span>
             <span><i class="fas fa-map-marker-alt"></i> Bursa / Türkiye</span>
         </div>
-        <button class="whatsapp-btn" onclick="window.open('https://wa.me/905409666602?text=Merhaba, Odak Power hakkında bilgi almak istiyorum.','_blank')"><i class="fab fa-whatsapp"></i> WhatsApp ile Satın Al</button>
+        <button class="whatsapp-btn" onclick="window.open('https://wa.me/905409666602?text=Merhaba, ODAK Power hakkında bilgi almak istiyorum.','_blank')"><i class="fab fa-whatsapp"></i> WhatsApp ile Satın Al</button>
     </div>
 
     <div id="productModal" class="modal"><div class="modal-content" id="modalContent"></div></div>
@@ -763,7 +776,7 @@
             { id:3, user:"Mehmet Kaya", rank:"Gümüş Lider", content:"Yeni kolajen ürününü denedim, harika!", likes:12, time:"1 gün önce", story:true }
         ];
 
-        let chatMessages = [{ role: "ai", content: "Merhaba! Ben Odak AI Wellness Koçun. Sana nasıl yardımcı olabilirim? 💫" }];
+        let chatMessages = [{ role: "ai", content: "Merhaba! Ben ODAK AI Wellness Koçun. Sana nasıl yardımcı olabilirim? 💫" }];
 
         function getAIResponse(msg) {
             const m = msg.toLowerCase();
@@ -771,29 +784,43 @@
             if(m.includes("ürün")) return "8 farklı kategoride premium ürünlerimiz var. En çok satan Kolajen ve Adaptogen Kahve!";
             if(m.includes("takım")) return "Takım büyütmek için düzenli eğitimlerimiz ve liderlik programımız var. Gold rank'a ulaşanlar ek %2 alır!";
             if(m.includes("nasıl")) return "Hemen bir üyelik oluştur, ürünleri incele ve referral linkini paylaşmaya başla!";
-            return "Odak'da başarının anahtarı: Düzenli ürün kullanımı + takım eğitimi + hedef belirleme. Sana özel yol haritası hazırlayabilirim! ✨";
+            return "ODAK'da başarının anahtarı: Düzenli ürün kullanımı + takım eğitimi + hedef belirleme. Sana özel yol haritası hazırlayabilirim! ✨";
         }
 
         function addMessage(role, content) { chatMessages.push({ role, content }); renderAICoach(); }
         function sendMessage() { let input = document.getElementById('chatInput'); if(input.value.trim()){ addMessage('user', input.value); setTimeout(()=> addMessage('ai', getAIResponse(input.value)), 500); input.value = ''; } }
         function quickPrompt(text) { addMessage('user', text); setTimeout(()=> addMessage('ai', getAIResponse(text)), 300); }
 
-        // Ürün Ekleme
+        // Admin Password Check
+        let adminPassword = "admin123";
+        
+        function checkAdminAccess(callback) {
+            let pwd = prompt("👑 YÖNETİM PANELİ ERİŞİMİ\n\nBu alana sadece yetkililer erişebilir.\nLütfen yönetici şifresini girin:");
+            if(pwd === adminPassword) {
+                callback();
+            } else if(pwd !== null) {
+                alert("❌ Hatalı şifre! Erişim reddedildi.");
+            }
+        }
+
+        // Ürün Ekleme (Şifreli)
         function showAddProductForm() {
-            document.getElementById('addModalContent').innerHTML = `
-                <div class="modal-header"><h2>➕ Yeni Ürün Ekle</h2><button class="close-modal" onclick="closeAddModal()">×</button></div>
-                <div class="add-form">
-                    <input type="text" id="prodName" placeholder="Ürün Adı">
-                    <input type="text" id="prodCategory" placeholder="Kategori">
-                    <input type="number" id="prodPrice" placeholder="Fiyat (₺)">
-                    <input type="number" id="prodMargin" placeholder="Marj %">
-                    <textarea id="prodTarget" placeholder="Hedef Kitle"></textarea>
-                    <textarea id="prodStrategy" placeholder="Satış Stratejisi"></textarea>
-                    <textarea id="prodPackage" placeholder="Paket Önerisi"></textarea>
-                    <button onclick="addProduct()">Ürün Ekle</button>
-                </div>
-            `;
-            document.getElementById('addModal').style.display = 'flex';
+            checkAdminAccess(() => {
+                document.getElementById('addModalContent').innerHTML = `
+                    <div class="modal-header"><h2>➕ Yeni Ürün Ekle</h2><button class="close-modal" onclick="closeAddModal()">×</button></div>
+                    <div class="add-form">
+                        <input type="text" id="prodName" placeholder="Ürün Adı">
+                        <input type="text" id="prodCategory" placeholder="Kategori">
+                        <input type="number" id="prodPrice" placeholder="Fiyat (₺)">
+                        <input type="number" id="prodMargin" placeholder="Marj %">
+                        <textarea id="prodTarget" placeholder="Hedef Kitle"></textarea>
+                        <textarea id="prodStrategy" placeholder="Satış Stratejisi"></textarea>
+                        <textarea id="prodPackage" placeholder="Paket Önerisi"></textarea>
+                        <button onclick="addProduct()">Ürün Ekle</button>
+                    </div>
+                `;
+                document.getElementById('addModal').style.display = 'flex';
+            });
         }
 
         function addProduct() {
@@ -815,26 +842,30 @@
         }
 
         function deleteProduct(id) {
-            if(confirm('Bu ürünü silmek istediğinize emin misiniz?')) {
-                products = products.filter(p => p.id !== id);
-                renderProducts();
-                showNotification('Ürün silindi!');
-            }
+            checkAdminAccess(() => {
+                if(confirm('Bu ürünü silmek istediğinize emin misiniz?')) {
+                    products = products.filter(p => p.id !== id);
+                    renderProducts();
+                    showNotification('Ürün silindi!');
+                }
+            });
         }
 
-        // E-kitap Ekleme/Silme
+        // E-kitap Ekleme/Silme (Şifreli)
         function showAddEbookForm() {
-            document.getElementById('addModalContent').innerHTML = `
-                <div class="modal-header"><h2>➕ Yeni E-kitap Ekle</h2><button class="close-modal" onclick="closeAddModal()">×</button></div>
-                <div class="add-form">
-                    <input type="text" id="ebookName" placeholder="Kitap Adı">
-                    <input type="number" id="ebookPrice" placeholder="Fiyat (₺)">
-                    <input type="number" id="ebookPages" placeholder="Sayfa Sayısı">
-                    <select id="ebookLevel"><option>Başlangıç</option><option>Orta</option><option>İleri</option></select>
-                    <button onclick="addEbook()">E-kitap Ekle</button>
-                </div>
-            `;
-            document.getElementById('addModal').style.display = 'flex';
+            checkAdminAccess(() => {
+                document.getElementById('addModalContent').innerHTML = `
+                    <div class="modal-header"><h2>➕ Yeni E-kitap Ekle</h2><button class="close-modal" onclick="closeAddModal()">×</button></div>
+                    <div class="add-form">
+                        <input type="text" id="ebookName" placeholder="Kitap Adı">
+                        <input type="number" id="ebookPrice" placeholder="Fiyat (₺)">
+                        <input type="number" id="ebookPages" placeholder="Sayfa Sayısı">
+                        <select id="ebookLevel"><option>Başlangıç</option><option>Orta</option><option>İleri</option></select>
+                        <button onclick="addEbook()">E-kitap Ekle</button>
+                    </div>
+                `;
+                document.getElementById('addModal').style.display = 'flex';
+            });
         }
 
         function addEbook() {
@@ -853,26 +884,30 @@
         }
 
         function deleteEbook(id) {
-            if(confirm('Bu e-kitabı silmek istediğinize emin misiniz?')) {
-                ebooks = ebooks.filter(e => e.id !== id);
-                renderEbooks();
-                showNotification('E-kitap silindi!');
-            }
+            checkAdminAccess(() => {
+                if(confirm('Bu e-kitabı silmek istediğinize emin misiniz?')) {
+                    ebooks = ebooks.filter(e => e.id !== id);
+                    renderEbooks();
+                    showNotification('E-kitap silindi!');
+                }
+            });
         }
 
-        // Danışmanlık Ekleme/Silme
+        // Danışmanlık Ekleme/Silme (Şifreli)
         function showAddConsultancyForm() {
-            document.getElementById('addModalContent').innerHTML = `
-                <div class="modal-header"><h2>➕ Yeni Danışmanlık Ekle</h2><button class="close-modal" onclick="closeAddModal()">×</button></div>
-                <div class="add-form">
-                    <input type="text" id="consName" placeholder="Danışmanlık Adı">
-                    <input type="number" id="consPrice" placeholder="Fiyat (₺)">
-                    <input type="text" id="consDuration" placeholder="Süre (örn: 45 dk, 3 ay)">
-                    <select id="consType"><option>Online</option><option>Yüz yüze</option><option>Online + WhatsApp</option></select>
-                    <button onclick="addConsultancy()">Danışmanlık Ekle</button>
-                </div>
-            `;
-            document.getElementById('addModal').style.display = 'flex';
+            checkAdminAccess(() => {
+                document.getElementById('addModalContent').innerHTML = `
+                    <div class="modal-header"><h2>➕ Yeni Danışmanlık Ekle</h2><button class="close-modal" onclick="closeAddModal()">×</button></div>
+                    <div class="add-form">
+                        <input type="text" id="consName" placeholder="Danışmanlık Adı">
+                        <input type="number" id="consPrice" placeholder="Fiyat (₺)">
+                        <input type="text" id="consDuration" placeholder="Süre (örn: 45 dk, 3 ay)">
+                        <select id="consType"><option>Online</option><option>Yüz yüze</option><option>Online + WhatsApp</option></select>
+                        <button onclick="addConsultancy()">Danışmanlık Ekle</button>
+                    </div>
+                `;
+                document.getElementById('addModal').style.display = 'flex';
+            });
         }
 
         function addConsultancy() {
@@ -891,11 +926,13 @@
         }
 
         function deleteConsultancy(id) {
-            if(confirm('Bu danışmanlığı silmek istediğinize emin misiniz?')) {
-                consultancies = consultancies.filter(c => c.id !== id);
-                renderConsultancy();
-                showNotification('Danışmanlık silindi!');
-            }
+            checkAdminAccess(() => {
+                if(confirm('Bu danışmanlığı silmek istediğinize emin misiniz?')) {
+                    consultancies = consultancies.filter(c => c.id !== id);
+                    renderConsultancy();
+                    showNotification('Danışmanlık silindi!');
+                }
+            });
         }
 
         function closeAddModal() { document.getElementById('addModal').style.display = 'none'; }
@@ -903,23 +940,29 @@
         // Dashboard
         function renderDashboard() {
             let html = `
+                <div class="commission-info">
+                    <span>💰 KOMİSYON YAPISI: L1: %8 | L2: %5 | L3: %3</span>
+                </div>
                 <div class="stats-grid">
                     <div class="stat-card"><div class="stat-header"><span class="stat-title">Toplam Ciro</span><div class="stat-icon"><i class="fas fa-chart-line"></i></div></div><div class="stat-value">₺${userData.totalCommission.toLocaleString()}</div></div>
                     <div class="stat-card"><div class="stat-header"><span class="stat-title">Aylık Hacim</span><div class="stat-icon"><i class="fas fa-users"></i></div></div><div class="stat-value">₺${userData.monthlyVolume.toLocaleString()}</div></div>
                     <div class="stat-card"><div class="stat-header"><span class="stat-title">Takım Üyesi</span><div class="stat-icon"><i class="fas fa-user-plus"></i></div></div><div class="stat-value">${userData.teamSize}</div></div>
                     <div class="stat-card"><div class="stat-header"><span class="stat-title">Rütbe</span><div class="stat-icon"><i class="fas fa-trophy"></i></div></div><div class="stat-value">${userData.rank}</div></div>
                 </div>
+                <div class="stats-grid">
+                    <div class="stat-card"><div class="stat-header"><span class="stat-title">Rütbe Bilgisi</span><div class="stat-icon"><i class="fas fa-star"></i></div></div><div class="stat-value">Bronz→Gümüş→Gold→Platinum→Diamond</div><div style="font-size:12px">Her rütbede komisyon oranın artar!</div></div>
+                </div>
                 <div class="charts-row">
-                    <div class="stat-card"><h3 style="margin-bottom:16px;">📈 Ciro/Komisyon Trendi</h3><canvas id="revenueChart" height="200"></canvas></div>
-                    <div class="stat-card"><h3 style="margin-bottom:16px;">🥧 Ağ Makarna Grafiği</h3><canvas id="networkChart" height="200"></canvas></div>
+                    <div class="stat-card"><h3 style="margin-bottom:16px; color:var(--gold);">📈 Ciro/Komisyon Trendi</h3><canvas id="revenueChart" height="200"></canvas></div>
+                    <div class="stat-card"><h3 style="margin-bottom:16px; color:var(--gold);">🥧 Ağ Makarna Grafiği</h3><canvas id="networkChart" height="200"></canvas></div>
                 </div>
                 <div class="stats-grid">
-                    <div class="stat-card"><h3>📊 Ürün Performansı</h3><canvas id="productBarChart" height="200"></canvas></div>
-                    <div class="stat-card"><h3>🏆 Takım Şampiyonası</h3>${teamMembers.map(m=>`<div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);"><span>${m.name} ${m.rank==='Platinum Lider'?'👑':m.rank==='Gold Lider'?'🥇':'🥈'}</span><span style="color:var(--gold);">₺${m.commission}</span></div>`).join('')}</div>
+                    <div class="stat-card"><h3 style="color:var(--gold);">📊 Ürün Performansı</h3><canvas id="productBarChart" height="200"></canvas></div>
+                    <div class="stat-card"><h3 style="color:var(--gold);">🏆 Takım Şampiyonası</h3>${teamMembers.map(m=>`<div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);"><span>${m.name} ${m.rank==='Platinum Lider'?'👑':m.rank==='Gold Lider'?'🥇':'🥈'}</span><span style="color:var(--gold);">₺${m.commission}</span></div>`).join('')}</div>
                 </div>
-                <div class="stat-card"><h3>✅ Görev Listesi</h3>${['Günlük kolajen iç','1 arkadaşına link gönder','Akademi dersi izle','Hedefini yaz'].map((t,i)=>`<div class="task-item" style="display:flex;justify-content:space-between;padding:12px 0;"><div><div class="task-check" style="display:inline-block;width:20px;height:20px;border:2px solid var(--border);border-radius:4px;margin-right:12px;cursor:pointer;" onclick="this.classList.toggle('completed');this.style.background=this.classList.contains('completed')?'var(--gold)':'transparent'"></div>${t}</div><span style="color:var(--gold);">+${[15,50,30,10][i]} puan</span></div>`).join('')}</div>
+                <div class="stat-card"><h3 style="color:var(--gold);">✅ Görev Listesi</h3>${['Günlük kolajen iç','1 arkadaşına link gönder','Akademi dersi izle','Hedefini yaz'].map((t,i)=>`<div class="task-item" style="display:flex;justify-content:space-between;padding:12px 0;"><div><div class="task-check" style="display:inline-block;width:20px;height:20px;border:2px solid var(--border);border-radius:4px;margin-right:12px;cursor:pointer;" onclick="this.classList.toggle('completed');this.style.background=this.classList.contains('completed')?'var(--gold)':'transparent'"></div>${t}</div><span style="color:var(--gold);">+${[40,30,20,15,10][i]} puan</span></div>`).join('')}</div>
                 <div class="stats-grid">
-                    <div class="stat-card"><h3>🎖️ Rozetlerim</h3><div><span class="badge badge-gold">🏅 30 Gün Streak</span> <span class="badge badge-gold">🚀 Star Recruiter</span> <span class="badge badge-platinum">💎 Platinum Lider</span></div><div class="progress-bar mt-3"><div class="progress-fill" style="width:${userData.rankProgress}%"></div><div class="mt-2">Diamond Lider'e ${userData.rankProgress}%</div></div></div>
+                    <div class="stat-card"><h3 style="color:var(--gold);">🎖️ Rozetlerim</h3><div><span class="badge badge-gold">🏅 30 Gün Streak</span> <span class="badge badge-gold">🚀 Star Recruiter</span> <span class="badge badge-platinum">💎 Platinum Lider</span></div><div class="progress-bar mt-3"><div class="progress-fill" style="width:${userData.rankProgress}%"></div><div class="mt-2">Diamond Lider'e ${userData.rankProgress}%</div></div></div>
                 </div>
             `;
             document.getElementById('dynamicContent').innerHTML = html;
@@ -927,11 +970,11 @@
             document.getElementById('pageSubTitle').innerHTML = 'Network Marketing Güç Merkezin';
             setTimeout(() => {
                 let ctx = document.getElementById('revenueChart')?.getContext('2d');
-                if(ctx) new Chart(ctx, { type:'line', data:{ labels:['Hafta1','Hafta2','Hafta3','Hafta4'], datasets:[{ label:'Ciro (₺)', data:[12470,15680,20340,24560], borderColor:'#D4AF7A', fill:true }] }, options:{ responsive:true, plugins:{ legend:{ labels:{ color:'white' } } } } });
+                if(ctx) new Chart(ctx, { type:'line', data:{ labels:['Hafta1','Hafta2','Hafta3','Hafta4'], datasets:[{ label:'Ciro (₺)', data:[12470,15680,20340,24560], borderColor:'#D4AF7A', fill:true }] }, options:{ responsive:true, plugins:{ legend:{ labels:{ color:'white' } } }, scales:{ y:{ ticks:{ color:'white' } }, x:{ ticks:{ color:'white' } } } } });
                 ctx = document.getElementById('networkChart')?.getContext('2d');
-                if(ctx) new Chart(ctx, { type:'doughnut', data:{ labels:['L1 (%8)','L2 (%5)','L3 (%3)'], datasets:[{ data:[8,5,3], backgroundColor:['#D4AF7A','#B8925A','#8B6914'] }] }, options:{ responsive:true } });
+                if(ctx) new Chart(ctx, { type:'doughnut', data:{ labels:['L1 (%8)','L2 (%5)','L3 (%3)'], datasets:[{ data:[8,5,3], backgroundColor:['#D4AF7A','#B8925A','#8B6914'] }] }, options:{ responsive:true, plugins:{ legend:{ labels:{ color:'white' } } } } });
                 ctx = document.getElementById('productBarChart')?.getContext('2d');
-                if(ctx) new Chart(ctx, { type:'bar', data:{ labels:products.slice(0,6).map(p=>p.name.split(' ')[0]), datasets:[{ label:'Satış (₺)', data:[1240,890,560,2100,430,780], backgroundColor:'#D4AF7A' }] }, options:{ responsive:true } });
+                if(ctx) new Chart(ctx, { type:'bar', data:{ labels:products.slice(0,6).map(p=>p.name.split(' ')[0]), datasets:[{ label:'Satış (₺)', data:[1240,890,560,2100,430,780], backgroundColor:'#D4AF7A' }] }, options:{ responsive:true, plugins:{ legend:{ labels:{ color:'white' } } }, scales:{ y:{ ticks:{ color:'white' } }, x:{ ticks:{ color:'white' } } } } });
             }, 100);
         }
 
@@ -939,11 +982,11 @@
         function renderProducts() {
             let html = `<button class="add-btn" onclick="showAddProductForm()"><i class="fas fa-plus"></i> Yeni Ürün Ekle</button>
             <div class="products-grid">${products.map(p=>`<div class="product-card"><div class="product-icon"><i class="fas fa-box"></i></div><div class="product-name">${p.name}</div><div class="product-price">₺${p.price}</div><div style="font-size:12px;color:var(--text-muted);">${p.category}</div><button class="delete-btn" onclick="deleteProduct(${p.id})"><i class="fas fa-trash"></i> Sil</button></div>`).join('')}</div>
-            <div class="stats-grid mt-4"><div class="stat-card"><h3>📈 Kategori Marj Analizi</h3><canvas id="marginChart" height="200"></canvas></div></div>`;
+            <div class="stats-grid mt-4"><div class="stat-card"><h3 style="color:var(--gold);">📈 Kategori Marj Analizi</h3><canvas id="marginChart" height="200"></canvas></div></div>`;
             document.getElementById('dynamicContent').innerHTML = html;
             document.getElementById('pageMainTitle').innerHTML = '🌿 Ürünler';
             document.getElementById('pageSubTitle').innerHTML = '8 Kategori Premium Wellness Ürünleri';
-            setTimeout(()=>{ let ctx=document.getElementById('marginChart')?.getContext('2d'); if(ctx) new Chart(ctx,{ type:'bar', data:{ labels:products.map(p=>p.name.split(' ')[0]), datasets:[{ label:'Marj %', data:products.map(p=>p.margin), backgroundColor:'#D4AF7A' }] }, options:{ responsive:true } }); },100);
+            setTimeout(()=>{ let ctx=document.getElementById('marginChart')?.getContext('2d'); if(ctx) new Chart(ctx,{ type:'bar', data:{ labels:products.map(p=>p.name.split(' ')[0]), datasets:[{ label:'Marj %', data:products.map(p=>p.margin), backgroundColor:'#D4AF7A' }] }, options:{ responsive:true, plugins:{ legend:{ labels:{ color:'white' } } }, scales:{ y:{ ticks:{ color:'white' } }, x:{ ticks:{ color:'white' } } } } }); },100);
         }
 
         // E-Kitaplar Sayfası
@@ -973,17 +1016,27 @@
 
         // Ağım
         function renderNetwork() {
-            let html = `<div class="stats-grid"><div class="stat-card"><div class="stat-header"><span class="stat-title">L1 Komisyon</span><div class="stat-icon"><i class="fas fa-percent"></i></div></div><div class="stat-value">%8</div></div><div class="stat-card"><div class="stat-header"><span class="stat-title">L2 Komisyon</span><div class="stat-icon"><i class="fas fa-percent"></i></div></div><div class="stat-value">%5</div></div><div class="stat-card"><div class="stat-header"><span class="stat-title">L3 Komisyon</span><div class="stat-icon"><i class="fas fa-percent"></i></div></div><div class="stat-value">%3</div></div></div>
-            <div class="charts-row"><div class="stat-card"><h3>📈 Pasif Gelir Trendi</h3><canvas id="passiveChart" height="200"></canvas></div><div class="stat-card"><h3>🏆 Takım Sıralaması</h3>${teamMembers.map((m,i)=>`<div style="display:flex;justify-content:space-between;padding:8px 0;"><span>${i+1}. ${m.name} (${m.rank})</span><span style="color:var(--gold);">₺${m.commission}</span></div>`).join('')}</div></div>`;
+            let html = `<div class="commission-info">
+                            <span>💰 KOMİSYON YAPISI: L1: %8 | L2: %5 | L3: %3</span>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat-card"><div class="stat-header"><span class="stat-title">L1 Komisyon</span><div class="stat-icon"><i class="fas fa-percent"></i></div></div><div class="stat-value">%8</div><div style="font-size:12px">Kendi direkt satışlarından</div></div>
+                            <div class="stat-card"><div class="stat-header"><span class="stat-title">L2 Komisyon</span><div class="stat-icon"><i class="fas fa-percent"></i></div></div><div class="stat-value">%5</div><div style="font-size:12px">Alt ekibinin satışlarından</div></div>
+                            <div class="stat-card"><div class="stat-header"><span class="stat-title">L3 Komisyon</span><div class="stat-icon"><i class="fas fa-percent"></i></div></div><div class="stat-value">%3</div><div style="font-size:12px">2. alt ekibinin satışlarından</div></div>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat-card"><div class="stat-header"><span class="stat-title">Rütbe Bilgisi</span><div class="stat-icon"><i class="fas fa-chart-line"></i></div></div><div class="stat-value">Bronz→Gümüş→Gold→Platinum→Diamond</div><div style="font-size:12px">Rütbe arttıkça komisyonların artar!</div></div>
+                        </div>
+                        <div class="charts-row"><div class="stat-card"><h3 style="color:var(--gold);">📈 Pasif Gelir Trendi</h3><canvas id="passiveChart" height="200"></canvas></div><div class="stat-card"><h3 style="color:var(--gold);">🏆 Takım Sıralaması</h3>${teamMembers.map((m,i)=>`<div style="display:flex;justify-content:space-between;padding:8px 0;"><span>${i+1}. ${m.name} (${m.rank})</span><span style="color:var(--gold);">₺${m.commission}</span></div>`).join('')}</div></div>`;
             document.getElementById('dynamicContent').innerHTML = html;
             document.getElementById('pageMainTitle').innerHTML = '🕸 Ağım';
             document.getElementById('pageSubTitle').innerHTML = '3 Seviyeli Komisyon Sistemi';
-            setTimeout(()=>{ let ctx=document.getElementById('passiveChart')?.getContext('2d'); if(ctx) new Chart(ctx,{ type:'line', data:{ labels:['Oca','Şub','Mar','Nis','May','Haz'], datasets:[{ label:'Pasif Gelir (₺)', data:[1200,1890,2400,3800,5200,6840], borderColor:'#D4AF7A', fill:true }] }, options:{ responsive:true } }); },100);
+            setTimeout(()=>{ let ctx=document.getElementById('passiveChart')?.getContext('2d'); if(ctx) new Chart(ctx,{ type:'line', data:{ labels:['Oca','Şub','Mar','Nis','May','Haz'], datasets:[{ label:'Pasif Gelir (₺)', data:[1200,1890,2400,3800,5200,6840], borderColor:'#D4AF7A', fill:true }] }, options:{ responsive:true, plugins:{ legend:{ labels:{ color:'white' } } }, scales:{ y:{ ticks:{ color:'white' } }, x:{ ticks:{ color:'white' } } } } }); },100);
         }
 
         // Akademi
         function renderAcademy() {
-            let html = `<div class="stats-grid">${courses.map(c=>`<div class="stat-card"><h3>📘 ${c.name}</h3><div class="progress-bar"><div class="progress-fill" style="width:${c.progress}%"></div></div><div>${c.modules} modül | ${c.progress}% tamamlandı</div>${c.certified?'<span class="badge badge-gold mt-2">🎓 Sertifikalı</span>':'<button class="quick-btn mt-2" onclick="showNotification(\'Ders başlıyor...\')">Devam Et →</button>'}</div>`).join('')}</div>`;
+            let html = `<div class="stats-grid">${courses.map(c=>`<div class="stat-card"><h3 style="color:var(--gold);">📘 ${c.name}</h3><div class="progress-bar"><div class="progress-fill" style="width:${c.progress}%"></div></div><div>${c.modules} modül | ${c.progress}% tamamlandı</div>${c.certified?'<span class="badge badge-gold mt-2">🎓 Sertifikalı</span>':'<button class="quick-btn mt-2" onclick="showNotification(\'Ders başlıyor...\')">Devam Et →</button>'}</div>`).join('')}</div>`;
             document.getElementById('dynamicContent').innerHTML = html;
             document.getElementById('pageMainTitle').innerHTML = '🎓 Akademi';
             document.getElementById('pageSubTitle').innerHTML = '5 Kapsamlı Kurs ile Uzmanlaş';
@@ -1003,7 +1056,7 @@
             let html = `<div class="ai-coach-card"><div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;"><div class="ai-avatar"><i class="fas fa-robot"></i></div><div><h2>✦ AI Wellness Koç</h2><p style="color:var(--gold);">Gemini AI Destekli</p></div></div>
             <div class="chat-messages" id="chatMessages">${chatMessages.map(m=>`<div class="message ${m.role}"><div class="message-bubble">${m.role==='ai'?'🤖 ':''}${m.content}</div></div>`).join('')}</div>
             <div class="quick-buttons">${['Komisyon yapısı nedir?','En çok satan ürün?','Takım nasıl büyütürüm?','Nasıl başlarım?'].map(q=>`<button class="quick-btn" onclick="quickPrompt('${q}')">${q}</button>`).join('')}</div>
-            <div class="chat-input-area" style="display:flex;gap:12px;margin-top:16px;"><input type="text" class="chat-input" id="chatInput" placeholder="Sokara AI Koçuna sor..." style="flex:1;padding:12px;background:var(--bg-elevated);border:1px solid var(--gold);border-radius:24px;color:white;" onkeypress="if(event.key==='Enter') sendMessage()"><button class="chat-send" onclick="sendMessage()" style="background:var(--gold);border:none;border-radius:50%;width:44px;cursor:pointer;"><i class="fas fa-paper-plane"></i></button></div></div>`;
+            <div class="chat-input-area" style="display:flex;gap:12px;margin-top:16px;"><input type="text" class="chat-input" id="chatInput" placeholder="ODAK AI Koçuna sor..." style="flex:1;padding:12px;background:var(--bg-elevated);border:1px solid var(--gold);border-radius:24px;color:white;" onkeypress="if(event.key==='Enter') sendMessage()"><button class="chat-send" onclick="sendMessage()" style="background:var(--gold);border:none;border-radius:50%;width:44px;cursor:pointer;"><i class="fas fa-paper-plane"></i></button></div></div>`;
             document.getElementById('dynamicContent').innerHTML = html;
             document.getElementById('pageMainTitle').innerHTML = '✦ AI Koç';
             document.getElementById('pageSubTitle').innerHTML = 'Gerçek Gemini AI ile Wellness Danışmanlığı';
@@ -1012,11 +1065,13 @@
 
         // Admin Panel
         function renderAdmin() {
-            let html = `<div class="stats-grid"><div class="stat-card"><h3>👑 Yönetim Paneli</h3><div class="task-item">Toplam Üye: 1,247</div><div class="task-item">Aylık Büyüme: +%23</div><div class="task-item">Toplam Ciro: ₺342,890</div><div class="task-item">Aktif Liderler: 42</div><div class="task-item">📚 Toplam E-kitap: ${ebooks.length}</div><div class="task-item">🎯 Danışmanlık: ${consultancies.length}</div><button class="login-btn mt-3" onclick="showNotification('Rapor hazırlanıyor')">📊 Rapor Oluştur</button></div><div class="stat-card"><h3>📈 Platform İstatistikleri</h3><canvas id="adminChart" height="200"></canvas></div></div>`;
-            document.getElementById('dynamicContent').innerHTML = html;
-            document.getElementById('pageMainTitle').innerHTML = '👑 Yönetim Paneli';
-            document.getElementById('pageSubTitle').innerHTML = 'Platform Genel Performans';
-            setTimeout(()=>{ let ctx=document.getElementById('adminChart')?.getContext('2d'); if(ctx) new Chart(ctx,{ type:'line', data:{ labels:['Hafta1','Hafta2','Hafta3','Hafta4'], datasets:[{ label:'Yeni Üye', data:[45,62,78,103], borderColor:'#D4AF7A', fill:true }] }, options:{ responsive:true } }); },100);
+            checkAdminAccess(() => {
+                let html = `<div class="stats-grid"><div class="stat-card"><h3 style="color:var(--gold);">👑 Yönetim Paneli</h3><div class="task-item">Toplam Üye: 1,247</div><div class="task-item">Aylık Büyüme: +%23</div><div class="task-item">Toplam Ciro: ₺342,890</div><div class="task-item">Aktif Liderler: 42</div><div class="task-item">📚 Toplam E-kitap: ${ebooks.length}</div><div class="task-item">🎯 Danışmanlık: ${consultancies.length}</div><div class="task-item">🌿 Toplam Ürün: ${products.length}</div><button class="login-btn mt-3" onclick="showNotification('Rapor hazırlanıyor')">📊 Rapor Oluştur</button></div><div class="stat-card"><h3 style="color:var(--gold);">📈 Platform İstatistikleri</h3><canvas id="adminChart" height="200"></canvas></div></div>`;
+                document.getElementById('dynamicContent').innerHTML = html;
+                document.getElementById('pageMainTitle').innerHTML = '👑 Yönetim Paneli';
+                document.getElementById('pageSubTitle').innerHTML = 'Platform Genel Performans';
+                setTimeout(()=>{ let ctx=document.getElementById('adminChart')?.getContext('2d'); if(ctx) new Chart(ctx,{ type:'line', data:{ labels:['Hafta1','Hafta2','Hafta3','Hafta4'], datasets:[{ label:'Yeni Üye', data:[45,62,78,103], borderColor:'#D4AF7A', fill:true }] }, options:{ responsive:true, plugins:{ legend:{ labels:{ color:'white' } } }, scales:{ y:{ ticks:{ color:'white' } }, x:{ ticks:{ color:'white' } } } } }); },100);
+            });
         }
 
         function showNotification(msg){ let n=document.createElement('div'); n.style.cssText='position:fixed;bottom:100px;right:20px;background:var(--gold);color:var(--bg-dark);padding:12px 24px;border-radius:12px;z-index:1000;animation:slideIn 0.3s'; n.innerHTML=msg; document.body.appendChild(n); setTimeout(()=>n.remove(),3000); }
